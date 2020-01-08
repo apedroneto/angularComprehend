@@ -12,7 +12,7 @@ export class GoogleSpellingService {
 
   searchSpellin(phrase) {
     return new Promise((resolve, reject) => {
-      this.httpClient.get('https://www.googleapis.com/customsearch/v1?key=AIzaSyBAfHaP2iZ_mgIXqCO8T_Hu_-NZ6YJyNZI&cx=017576662512468239146:omuauf_lfve&lr=lang_pt&q='+phrase).subscribe((result: any) => {
+      this.httpClient.get('https://www.googleapis.com/customsearch/v1?key=&cx=017576662512468239146:omuauf_lfve&lr=lang_pt&q='+phrase).subscribe((result: any) => {
         resolve(result);
       }, (error: any) => {
         reject(error);
